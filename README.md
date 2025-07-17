@@ -6,3 +6,5 @@ Date: July 17, 2025
 
 
 These lecture notes in Jupyter is part of the undergraduate course for students in the [Department of Electrical and Computer Engineering](https://www.eng.uwo.ca/electrical/) at [Western University in Canada](https://www.uwo.ca/). Currently named as **AISE 4025**, this course introduces basic concepts in computer-assisted surgery (CAS), or more specifically, image-guided surgical interventions (IGS).
+
+The corresponding Github Page can be found [here](https://cheneuwo.github.io/CAS_Book/intro.html).
