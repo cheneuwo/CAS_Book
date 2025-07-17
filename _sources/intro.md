@@ -10,7 +10,7 @@ These lecture notes in Jupyter are part of the undergraduate course for students
 ## Acknowledgement
 Part of this course materials were consulted using materials from similar courses offered at
 - [Queen's University CISC 330](https://www.cs.queensu.ca/undergraduate/courses/CISC-330)
-- [UCL MPHY2026](https://github.com/UCL/MPHY0026/tree/master)
+- [UCL MPHY2026](https://mphy0026.readthedocs.io/en/latest/)
 
 ```{tableofcontents}
 ```
