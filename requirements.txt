@@ -1,3 +1,6 @@
 jupyter-book
+python=3.11
 matplotlib
 numpy
+vtk
+pyqt
