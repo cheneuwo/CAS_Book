@@ -5,4 +5,5 @@ format: jb-book
 root: intro
 chapters:
 - file: docs/Introduction/Background.ipynb
-- file: docs/Introduction/Surgery.ipynb
+  sections:
+  - file: docs/Introduction/Surgery.ipynb
