@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>test &#8212; Introduction to Computer Assisted Surgeries, Theory and Practice</title>
+    <title>Background &#8212; Introduction to Computer Assisted Surgeries, Theory and Practice</title>
   
   
   
@@ -179,7 +179,7 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">test</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Background</a></li>
 </ul>
 
     </div>
@@ -352,7 +352,9 @@ document.write(`
   </button>
 `);
 </script>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -363,11 +365,20 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>test</h1>
+    <h1>Background</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-computer-assisted-intervention-cai">What is Computer Assisted Intervention (CAI)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#this-course">This course</a></li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -377,8 +388,43 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="test">
-<h1>test<a class="headerlink" href="#test" title="Link to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="background">
+<h1>Background<a class="headerlink" href="#background" title="Link to this heading">#</a></h1>
+<p>Computer-integrated interventional medicine is an interdisciplinary research area where computerized techniques are applied to every aspect of interventional medicine. A close analogy is the design and manufacturing of an automobile: computer software is used in the creation, modification, analysis, and optimization of surgical approaches, and computer software and mechatronics are used to control and automate the execution of these surgical maneuvers. In other words, computer-integrated interventional medicine is the application of <strong>Computer Aided Design</strong> (CAD), <strong>Computer Aided Manufacturing</strong> (CAM), and <strong>Quality Control</strong> to interventional medicine.</p>
+<img title="CAS" alt="Computer Assisted Surgery as CAD/CAM" src="pics\I4M Data Flow.png"> 
+<p>Image courtesy of <a class="reference external" href="https://www.cs.jhu.edu/~rht/Research.html#VISION">Dr. Russel Taylor</a>, accessed July 7, 2025.</p>
+<p>In this regard, interventional medicine is treated, using engineering language, as a closed loop process. This basic process of</p>
+<ol class="arabic simple">
+<li><p>Combining specific information about the patient with the physician’s general knowledge to determine the patient’s condition,</p></li>
+<li><p>Formulating a plan of action,</p></li>
+<li><p>Carrying out this plan, and</p></li>
+<li><p>Evaluating the results has existed since ancient times.</p></li>
+</ol>
+<p>Traditionally, these steps all have taken place in the physician’s head: the ability of modern computer-based technology to assist humans in the processing and acting on complex information will profoundly enhance this process.</p>
+<section id="what-is-computer-assisted-intervention-cai">
+<h2>What is Computer Assisted Intervention (CAI)<a class="headerlink" href="#what-is-computer-assisted-intervention-cai" title="Link to this heading">#</a></h2>
+<p>Computer Assisted Intervention (CAI) is a sub-discipline of computer-integrated interventional medicine, focusing on <strong>surgical</strong> interventions. CAI corresponds to the <strong>CAM</strong> of the computer-integrated interventional medicine.</p>
+<p>Interventional medicine typically takes place in three stages:</p>
+<ol class="arabic simple">
+<li><p><strong>Planning</strong>: For any patient, we need to</p>
+<ul class="simple">
+<li><p>Perform diagnosis: find out what is wrong. This is typically performed using aids from medical mechatronics (e.g. blood pressure monitor) and medical imaging (e.g. ultrasound and x-ray)</p></li>
+<li><p>Formulate a course of treatment: for example, if a patient has a tumour in the liver, should it be surgically removed, undergoing chemotherapy, or treated with thermal or chemical ablation?</p></li>
+<li><p>This <strong>planning</strong> stage corresponds to computer-aided design (CAD).</p></li>
+</ul>
+</li>
+<li><p><strong>Execution</strong>: Once the plan is formulated, how to make sure it was executed as planned? For example, if the course of treatment for a patient with liver tumour is thermal ablation, how do we place the ablation applicator at the intended location to ensure the complete tumor necrosis?</p>
+<ul class="simple">
+<li><p>This <strong>Execution</strong> stage, when assisted using computerized method, corresponds to computer-aided manufacturing (CAM).</p></li>
+</ul>
+</li>
+<li><p><strong>Total Quality Management</strong>: How do we know if what was planned and executed was effective? Past outcomes can be analyzed to provide insight for further surgery, thus the <strong>quality control</strong> is the feedback to this closed-loop process of CAI.</p></li>
+</ol>
+</section>
+<section id="this-course">
+<h2>This course<a class="headerlink" href="#this-course" title="Link to this heading">#</a></h2>
+<p>For this course, we focus on the <strong>execution</strong> of the surgical plan in an interventional surgical suite. That is, we want to develop computerized techniques to make sure that surgical plans, defined by the interventionists (e.g. surgeons or interventional radiologists), are performed as intended. Our approach is to develop a <strong>surgical navigational system</strong>, e.g. <strong>GPS for surgery</strong>, to guide the execution of surgical maneuvers.</p>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -426,6 +472,22 @@ document.write(`
             </div>
             
             
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-computer-assisted-intervention-cai">What is Computer Assisted Intervention (CAI)</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#this-course">This course</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
