@@ -10,4 +10,5 @@ chapters:
   - file: docs/Introduction/History.ipynb
   - file: docs/Introduction/Imaging.ipynb
   - file: docs/Introduction/Tracking.ipynb
+- file: docs/LinearAlgebra/primer.ipynb
 - file: docs/Conclusion/bibliography.ipynb
