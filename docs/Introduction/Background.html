@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Background &#8212; Introduction to Computer Assisted Surgeries, Theory and Practice</title>
+    <title>Introduction to Computer-Integrated Interventional Medicine &#8212; Introduction to Computer Assisted Surgeries, Theory and Practice</title>
   
   
   
@@ -180,8 +180,11 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Background</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l1 current active has-children"><a class="current reference internal" href="#">Introduction to Computer-Integrated Interventional Medicine</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
 <li class="toctree-l2"><a class="reference internal" href="Surgery.html">Surgery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="History.html">History of Image-Guided Interventions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Imaging.html">Medical Imaging Modalities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Tracking.html">Tracking Devices</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1"><a class="reference internal" href="../Conclusion/bibliography.html">Bibliography</a></li>
@@ -370,7 +373,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Background</h1>
+    <h1>Introduction to Computer-Integrated Interventional Medicine</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -380,8 +383,25 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-manufacturing-analogy-in-clinical-practice">The Manufacturing Analogy in Clinical Practice</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-computer-assisted-intervention-cai">What is Computer Assisted Intervention (CAI)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-this-course">About this course</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#core-technology-pillars-of-cai">Core Technology Pillars of CAI</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#medical-imaging-and-visualization">Medical Imaging and Visualization</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#surgical-navigation">Surgical Navigation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#robotics-and-mechatronics">Robotics and Mechatronics</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#course-philosophy-and-learning-approach">Course Philosophy and Learning Approach</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#theoretical-foundation">Theoretical Foundation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-this-course-focus-on-surgical-execution">About This Course: Focus on Surgical Execution</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-we-cover-in-depth">What We Cover In Depth:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-we-touch-upon">What We Touch Upon:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-we-don-t-cover">What We Don’t Cover:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
+</ul>
+</li>
 </ul>
             </nav>
         </div>
@@ -393,13 +413,33 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="background">
-<h1>Background<a class="headerlink" href="#background" title="Link to this heading">#</a></h1>
-<p>Computer-integrated interventional medicine is an interdisciplinary research area where computerized techniques are applied to every aspect of interventional medicine. A close analogy is the design and manufacturing of an automobile: computer software is used in the creation, modification, analysis, and optimization of surgical approaches, and computer software and mechatronics are used to control and automate the execution of these surgical maneuvers. In other words, computer-integrated interventional medicine is the application of <strong>Computer Aided Design</strong> (CAD), <strong>Computer Aided Manufacturing</strong> (CAM), and <strong>Quality Control</strong> to interventional medicine.</p>
-<a class="bg-primary mb-1 reference internal image-reference" href="../../_images/I4M_Data_Flow.png"><img alt="Computer Assisted Surgery as CAD/CAM" class="bg-primary mb-1 align-center" src="../../_images/I4M_Data_Flow.png" style="width: 600px;" />
+  <section class="tex2jax_ignore mathjax_ignore" id="introduction-to-computer-integrated-interventional-medicine">
+<h1>Introduction to Computer-Integrated Interventional Medicine<a class="headerlink" href="#introduction-to-computer-integrated-interventional-medicine" title="Link to this heading">#</a></h1>
+<p>Computer-integrated interventional medicine is an interdisciplinary research area where computerized techniques are applied to every aspect of interventional medicine. A close analogy is the design and manufacturing of an automobile: computer software is used in the creation, modification, analysis, and optimization of surgical approaches, and computer software and mechatronics are used to control and assist the execution of these surgical maneuvers. In other words, computer-integrated interventional medicine is the application of <strong>Computer Aided Design</strong> (CAS), <strong>Computer Aided Manufacturing</strong> (CAM), and <strong>Total Quality Management</strong> (TQM) to interventional medicine.</p>
+<figure class="align-default" id="cadcam-model">
+<a class="reference internal image-reference" href="../../_images/I4M_Data_Flow.png"><img alt="../../_images/I4M_Data_Flow.png" src="../../_images/I4M_Data_Flow.png" style="width: 600px;" />
 </a>
-<p>Image courtesy of <a class="reference external" href="https://www.cs.jhu.edu/~rht/Research.html#VISION">Dr. Russel Taylor</a>, accessed July 7, 2025.</p>
-<p>In this regard, interventional medicine is treated, using engineering language, as a closed loop process. This basic process of</p>
+<figcaption>
+<p><span class="caption-number">Fig. 1 </span><span class="caption-text">Image courtesy of <a class="reference external" href="https://www.cs.jhu.edu/~rht/Research.html#VISION">Dr. Russel Taylor</a>, accessed July 7, 2025.</span><a class="headerlink" href="#cadcam-model" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<section id="the-manufacturing-analogy-in-clinical-practice">
+<h2>The Manufacturing Analogy in Clinical Practice<a class="headerlink" href="#the-manufacturing-analogy-in-clinical-practice" title="Link to this heading">#</a></h2>
+<p>Just as modern automotive manufacturing transforms raw materials into precision vechicles through engineering processes, computer-integrated interventional medicine transforms diagnostic information into therapeutic outcomes:</p>
+<p><strong>In Automative Manufacturing</strong></p>
+<ul class="simple">
+<li><p><strong>CAD</strong>: Engineers create 3D models, run crash simulations, optiize aerodynamics,</p></li>
+<li><p><strong>CAM</strong>: Robotic assembly lines position components with sub-millimetre precision, and</p></li>
+<li><p><strong>TQM</strong>: Real-time sensors monitor quality, detect defects, trigger corrections.</p></li>
+</ul>
+<p><strong>In Interventional Medicine</strong></p>
+<ul class="simple">
+<li><p><strong>CAD</strong>: Surgical planning. Surgeons creates a patient-specific plan that may includes 3D models of the patient anatomy, simulating procedures, and optimizing surgical approaches,</p></li>
+<li><p><strong>CAM</strong>: Surgical execution. Using advanced mechatronics such as surgical navigation system or medical robotics, guide surgical instruments with sub-millimetre accuracy to surgical targets, and</p></li>
+<li><p><strong>TQM</strong>: Surgical assessment. Surgical outcomes are recorded, complications identified, used to improve furture procedures.</p></li>
+</ul>
+<p>This analogy extends beyond superficial similarities - both domains require integration of design software, precision tools, and quality assurance systems to achieve consistent, high-quality outcomes.</p>
+<p>In this regard, interventional medicine is treated, using engineering language, as a closed-loop process. This process of</p>
 <ol class="arabic simple">
 <li><p>Combining specific information about the patient with the physician’s general knowledge to determine the patient’s condition,</p></li>
 <li><p>Formulating a plan of action,</p></li>
@@ -407,9 +447,9 @@ document.write(`
 <li><p>Evaluating the results has existed since ancient times.</p></li>
 </ol>
 <p>Traditionally, these steps all have taken place in the physician’s head: the ability of modern computer-based technology to assist humans in the processing and acting on complex information will profoundly enhance this process.</p>
+</section>
 <section id="what-is-computer-assisted-intervention-cai">
 <h2>What is Computer Assisted Intervention (CAI)<a class="headerlink" href="#what-is-computer-assisted-intervention-cai" title="Link to this heading">#</a></h2>
-<p>Computer Assisted Intervention (CAI) is a sub-discipline of computer-integrated interventional medicine, focusing on <strong>surgical</strong> interventions. CAI corresponds to the <strong>CAM</strong> of the computer-integrated interventional medicine.</p>
 <p>Interventional medicine typically takes place in three stages:</p>
 <ol class="arabic simple">
 <li><p><strong>Planning</strong>: For any patient, we need to</p>
@@ -424,12 +464,97 @@ document.write(`
 <li><p>This <strong>Execution</strong> stage, when assisted using computerized method, corresponds to computer-aided manufacturing (CAM).</p></li>
 </ul>
 </li>
-<li><p><strong>Total Quality Management</strong>: How do we know if what was planned and executed was effective? Past outcomes can be analyzed to provide insight for further surgery, thus the <strong>quality control</strong> is the feedback to this closed-loop process of CAI.</p></li>
+<li><p><strong>Quality Control</strong>: How do we know if what was planned and executed was effective? Past outcomes can be analyzed to provide insight for further surgery, thus the <strong>quality control</strong> is the feedback to this closed-loop process of CAI.</p></li>
 </ol>
 </section>
-<section id="about-this-course">
-<h2>About this course<a class="headerlink" href="#about-this-course" title="Link to this heading">#</a></h2>
+<section id="core-technology-pillars-of-cai">
+<h2>Core Technology Pillars of CAI<a class="headerlink" href="#core-technology-pillars-of-cai" title="Link to this heading">#</a></h2>
+<p>Computer-assisted intervention rests on four foundational technology pillars:</p>
+<section id="medical-imaging-and-visualization">
+<h3>Medical Imaging and Visualization<a class="headerlink" href="#medical-imaging-and-visualization" title="Link to this heading">#</a></h3>
+<p>Modern interventional medicine relies heavily on our ability to “see inside” the patient:</p>
+<ul class="simple">
+<li><p><strong>Preoperative imaging</strong> (X-ray, Computed Tomorography, Magnetic Resonance Imaging, ultrasound) provides detailed anatomical information for surgical planning.</p></li>
+<li><p><strong>Intraoperative imaging</strong> (ultrasound, fluoroscopy) provides real-time updates during procedures,</p></li>
+<li><p><strong>Mixed-reality systems</strong> overlay enhances surgeon’s view of the patient.</p></li>
+</ul>
+</section>
+<section id="surgical-navigation">
+<h3>Surgical Navigation<a class="headerlink" href="#surgical-navigation" title="Link to this heading">#</a></h3>
+<p>Akin to GPS for driving navigation, surgical navigation systems tracks surgical instruments relative to patient anatomy:</p>
+<ul class="simple">
+<li><p><strong>Optical tracking system</strong> uses camera to track markers on the patients or surgical instruments,</p></li>
+<li><p><strong>Magnetic tracking system</strong> enables localization of both rigid and flexible surgical instruments,</p></li>
+<li><p><strong>Registration algorithms</strong> align preoperative images with intraoperative reality,</p></li>
+<li><p><strong>Calibration algorithms</strong> maintains accuracy throughout dynamic procedures.</p></li>
+</ul>
+</section>
+<section id="robotics-and-mechatronics">
+<h3>Robotics and Mechatronics<a class="headerlink" href="#robotics-and-mechatronics" title="Link to this heading">#</a></h3>
+<p>Robotic systems extend human capabilities in the operating room:</p>
+<ul class="simple">
+<li><p><strong>Master-slave systems</strong> filter tremor and scale motions for microsurgery,</p></li>
+<li><p><strong>Haptic feedback devices</strong> provide forse sensation for remote manipulation,</p></li>
+<li><p><strong>Specialized end-effectors</strong> perform tasks that are traditionally difficult for human operator to perform, and</p></li>
+<li><p><strong>Autonomous subsystems</strong> handle routine tasks while surgeons focus on critical decisions.</p></li>
+</ul>
+</section>
+</section>
+<section id="course-philosophy-and-learning-approach">
+<h2>Course Philosophy and Learning Approach<a class="headerlink" href="#course-philosophy-and-learning-approach" title="Link to this heading">#</a></h2>
+<p>this course adopts a system engineering perspective on surgical navigation, emphasizing:</p>
+<section id="theoretical-foundation">
+<h3>Theoretical Foundation<a class="headerlink" href="#theoretical-foundation" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p><strong>Linear Algebra</strong> for data representation and coordinate transformation,</p></li>
+<li><p><strong>Computer Graphics</strong> for 2D and 3D visualization</p></li>
+<li><p><strong>Augmented Reality</strong>: 3D visualization and human-computer interaction</p></li>
+</ul>
+</section>
+</section>
+<section id="about-this-course-focus-on-surgical-execution">
+<h2>About This Course: Focus on Surgical Execution<a class="headerlink" href="#about-this-course-focus-on-surgical-execution" title="Link to this heading">#</a></h2>
+<p>While computer-integrated interventional medicine encompasses the entire planning-execution-assessment cycle, this course provides deep expertise in the execution phase—specifically, surgical navigation systems that serve as “GPS for surgery.”</p>
+<section id="what-we-cover-in-depth">
+<h3>What We Cover In Depth:<a class="headerlink" href="#what-we-cover-in-depth" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Real-time tracking technologies: Optical, electromagnetic, and inertial systems</p></li>
+<li><p>Registration algorithms: Aligning preoperative plans with intraoperative reality</p></li>
+<li><p>Navigation interfaces: Displaying guidance information to surgical teams</p></li>
+<li><p>Accuracy assessment: Methods for measuring and maintaining system performance</p></li>
+<li><p>Integration challenges: Connecting navigation systems with OR workflows</p></li>
+</ul>
+</section>
+<section id="what-we-touch-upon">
+<h3>What We Touch Upon:<a class="headerlink" href="#what-we-touch-upon" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Planning systems: How surgical plans are created (inputs to navigation systems)</p></li>
+<li><p>Quality assessment: How navigation accuracy affects outcomes (outputs from navigation systems)</p></li>
+<li><p>Broader CAI context: Where navigation fits in the complete intervention cycle</p></li>
+</ul>
+</section>
+<section id="what-we-don-t-cover">
+<h3>What We Don’t Cover:<a class="headerlink" href="#what-we-don-t-cover" title="Link to this heading">#</a></h3>
+<ul class="simple">
+<li><p>Medical imaging physics: Detailed CT/MRI acquisition and reconstruction</p></li>
+<li><p>Robotic control theory: Low-level motor control and kinematics</p></li>
+<li><p>Clinical medicine: Diagnosis and treatment selection</p></li>
+<li><p>Healthcare economics: Detailed cost-effectiveness analysis</p></li>
+</ul>
+<p>This focused approach allows us to develop deep expertise in surgical navigation while maintaining awareness of the broader CAI ecosystem.</p>
 <p>For this course, we focus on the <strong>execution</strong> of the surgical plan in an interventional surgical suite. That is, we want to develop computerized techniques to make sure that surgical plans, defined by the interventionists (e.g. surgeons or interventional radiologists), are performed as intended. Our approach is to develop a <strong>surgical navigational system</strong>, e.g. <strong>GPS for surgery</strong>, to guide the execution of surgical maneuvers.</p>
+</section>
+<section id="learning-objectives">
+<h3>Learning Objectives<a class="headerlink" href="#learning-objectives" title="Link to this heading">#</a></h3>
+<p>By the end of this course, students will be able to:</p>
+<ol class="arabic simple">
+<li><p>Analyze the role of computer-assisted technologies in modern interventional medicine</p></li>
+<li><p>Design and evaluate surgical navigation systems for specific clinical applications</p></li>
+<li><p>Understand the technical challenges and solutions in image-guided surgery</p></li>
+<li><p>Assess the clinical impact and limitations of current CAI technologies</p></li>
+<li><p>Propose innovative solutions for emerging challenges in computer-assisted intervention</p></li>
+</ol>
+</section>
 </section>
 <div class="toctree-wrapper compound">
 </div>
@@ -499,8 +624,25 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-manufacturing-analogy-in-clinical-practice">The Manufacturing Analogy in Clinical Practice</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-computer-assisted-intervention-cai">What is Computer Assisted Intervention (CAI)</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-this-course">About this course</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#core-technology-pillars-of-cai">Core Technology Pillars of CAI</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#medical-imaging-and-visualization">Medical Imaging and Visualization</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#surgical-navigation">Surgical Navigation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#robotics-and-mechatronics">Robotics and Mechatronics</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#course-philosophy-and-learning-approach">Course Philosophy and Learning Approach</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#theoretical-foundation">Theoretical Foundation</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#about-this-course-focus-on-surgical-execution">About This Course: Focus on Surgical Execution</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-we-cover-in-depth">What We Cover In Depth:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-we-touch-upon">What We Touch Upon:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#what-we-don-t-cover">What We Don’t Cover:</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#learning-objectives">Learning Objectives</a></li>
+</ul>
+</li>
 </ul>
   </nav></div>
 

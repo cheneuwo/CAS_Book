@@ -60,8 +60,8 @@
     <script>DOCUMENTATION_OPTIONS.pagename = 'docs/Introduction/Surgery';</script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Bibliography" href="../Conclusion/bibliography.html" />
-    <link rel="prev" title="Background" href="Background.html" />
+    <link rel="next" title="History of Image-Guided Interventions" href="History.html" />
+    <link rel="prev" title="Introduction to Computer-Integrated Interventional Medicine" href="Background.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -180,8 +180,11 @@
             </li>
         </ul>
         <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active has-children"><a class="reference internal" href="Background.html">Background</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="Background.html">Introduction to Computer-Integrated Interventional Medicine</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
 <li class="toctree-l2 current active"><a class="current reference internal" href="#">Surgery</a></li>
+<li class="toctree-l2"><a class="reference internal" href="History.html">History of Image-Guided Interventions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Imaging.html">Medical Imaging Modalities</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Tracking.html">Tracking Devices</a></li>
 </ul>
 </details></li>
 <li class="toctree-l1"><a class="reference internal" href="../Conclusion/bibliography.html">Bibliography</a></li>
@@ -380,7 +383,10 @@ document.write(`
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#but-what-is-surgery">But what is Surgery?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#but-what-is-surgery">But What Is Surgery?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-evolution-of-surgical-access">The Evolution of Surgical Access</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#surgery-vs-intervention-the-critical-distrinction">Surgery vs. Intervention: The Critical Distrinction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implications-for-computer-assisted-surgery">Implications for Computer-Assisted Surgery</a></li>
 </ul>
             </nav>
         </div>
@@ -394,26 +400,56 @@ document.write(`
                   
   <section class="tex2jax_ignore mathjax_ignore" id="surgery">
 <h1>Surgery<a class="headerlink" href="#surgery" title="Link to this heading">#</a></h1>
-<p>Perhaps a philosophical discussion: in this course, we differentiate between <strong>Surgery</strong> and <strong>Intervention</strong>.</p>
+<p>Before diving into the concept of computer-assisted surgeries, we need to make a philosophical distinction that will guide our understanding throughout this course: the difference between <strong>Surgery</strong> and <strong>Intervention</strong>.</p>
 <section id="but-what-is-surgery">
-<h2>But what is Surgery?<a class="headerlink" href="#but-what-is-surgery" title="Link to this heading">#</a></h2>
-<p>According to the Oxford English Dictionary, the definition of the word <a class="reference external" href="https://www.oed.com/dictionary/surgery_n?tab=meaning_and_use#19777282"><strong>Surgery</strong></a> includes, among others:</p>
+<h2>But What Is Surgery?<a class="headerlink" href="#but-what-is-surgery" title="Link to this heading">#</a></h2>
+<p>According to the Oxford English Dictionary, the definition of the word <a class="reference external" href="https://www.oed.com/dictionary/surgery_n?tab=meaning_and_use#19777282"><strong>Surgery</strong></a> includes, among others,</p>
 <ul class="simple">
 <li><p>The art or practice of treating wounds, fractured bones, and other conditions by manual operation or instrumental appliances; surgical treatment, and</p></li>
 <li><p>Surgery of Access.</p></li>
 </ul>
-<p>Often, the word <strong>surgery</strong> is associated with surgical <em>incisions</em>. Take the <a class="reference external" href="https://my.clevelandclinic.org/health/treatments/22930-hepatectomy-liver-resection">hepatectomy</a> procedure as an example—possible surgical approaches include:</p>
+<p>These definitions reveal something important: surgery is fundamentally about <strong>access</strong> – creating pathways to reach surgical targets that would otherwise be inaccessible. Consider a <a class="reference external" href="https://my.clevelandclinic.org/health/treatments/22930-hepatectomy-liver-resection">hepatectomy</a> procedure as an example, possible surgical approaches include:</p>
 <blockquote>
 <div><p>If you’re having open surgery, your surgeon will make one long incision across your abdomen to open your abdominal cavity. If you’re having laparoscopic surgery, your surgeon will make 4 to 6 “keyhole” incisions, which they’ll use to place the camera (laparoscope) and surgical instruments to do the operation.</p>
 </div></blockquote>
-<a class="bg-primary mb-1 reference internal image-reference" href="../../_images/1-s2.0-S1878788611001445-fx3.jpg"><img alt="Open Surgery" class="bg-primary mb-1 align-center" src="../../_images/1-s2.0-S1878788611001445-fx3.jpg" style="width: 400px;" />
+<p>which are focused entirely on access. Notice how both approaches, open and laparoscopic, are concerned with providing two essential elements: <strong>visualization</strong> (so surgeons can see the target, via direct human-vision or indirect medical imaging) and <strong>manipulation</strong> (so surgeons can reach the surgical target with instruments).</p>
+</section>
+<section id="the-evolution-of-surgical-access">
+<h2>The Evolution of Surgical Access<a class="headerlink" href="#the-evolution-of-surgical-access" title="Link to this heading">#</a></h2>
+<p>Traditional open surgery requires large incision to establish direct line-of-sight visualization (i.e. direct human vision) and unrestricted surgical instrument access.</p>
+<figure class="align-default" id="open-liver-surgery-fig">
+<a class="reference internal image-reference" href="../../_images/1-s2.0-S1878788611001445-fx3.jpg"><img alt="../../_images/1-s2.0-S1878788611001445-fx3.jpg" src="../../_images/1-s2.0-S1878788611001445-fx3.jpg" style="width: 400px;" />
 </a>
-<p>A depiction of open liver surgery with large incision, image courtesy of citation <span id="id1">[<a class="reference internal" href="../Conclusion/bibliography.html#id2" title="S. Gaujoux and D Goéré. Surgical approach for hepatectomy. Journal of Visceral Surgery, 148(6):e422–e426, 2011.">Gaujoux and Goéré, 2011</a>]</span>.</p>
-<a class="bg-primary mb-1 reference internal image-reference" href="../../_images/464_2022_9312_Fig9_HTML.webp"><img alt="Minimally Invasive Surgery" class="bg-primary mb-1 align-center" src="../../_images/464_2022_9312_Fig9_HTML.webp" style="width: 400px;" />
+<figcaption>
+<p><span class="caption-number">Fig. 2 </span><span class="caption-text">A depiction of open liver surgery with large incision, image courtesy of citation <span id="id1">[<a class="reference internal" href="../Conclusion/bibliography.html#id2" title="S. Gaujoux and D Goéré. Surgical approach for hepatectomy. Journal of Visceral Surgery, 148(6):e422–e426, 2011.">Gaujoux and Goéré, 2011</a>]</span>.</span><a class="headerlink" href="#open-liver-surgery-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>However, advances in medical imaging and mechatronics have revolutionized this approach. Technologies such as laparoscopic cameras, fibre-optic illumination, miniaturized instruments, and medical robotics now enable surgeons to achieve the close-to-equivalent visualization and manipulation through small <em>keyhole</em> incisions, forming the foundation of <strong>minimally invasive surgery</strong>.</p>
+<figure class="align-default" id="lapar-liver-surgery-fig">
+<a class="reference internal image-reference" href="../../_images/464_2022_9312_Fig9_HTML.webp"><img alt="../../_images/464_2022_9312_Fig9_HTML.webp" src="../../_images/464_2022_9312_Fig9_HTML.webp" style="width: 400px;" />
 </a>
-<p>A depicture of minimally invasive surgery where surgical access is provided through trocar, image courtesy of citation <span id="id2">[<a class="reference internal" href="../Conclusion/bibliography.html#id3" title="Ziqi Hou, Qingyun Xie, Guoteng Qiu, Zhaoxing Jin, Sizheng Mi, and Jiwei Huang. Trocar layouts in laparoscopic liver surgery. Surgical Endoscopy, 36:7949–7960, 2022.">Hou <em>et al.</em>, 2022</a>]</span>.</p>
-<p>That is, <strong>surgery</strong> is a means to provide <strong>access</strong> to the surgical target (e.g., tumour hidden beneath organ surface). On the other hand, <strong>intervention</strong> is the act of making the patient better, e.g., the act of removing a tumour via resection or via thermal ablation.</p>
-<p>In this manner, <strong>surgery is, in fact, a side-effect of therapy!</strong></p>
+<figcaption>
+<p><span class="caption-number">Fig. 3 </span><span class="caption-text">A depiction of minimally invasive surgery where surgical access is provided through trocar, image courtesy of citation <span id="id2">[<a class="reference internal" href="../Conclusion/bibliography.html#id3" title="Ziqi Hou, Qingyun Xie, Guoteng Qiu, Zhaoxing Jin, Sizheng Mi, and Jiwei Huang. Trocar layouts in laparoscopic liver surgery. Surgical Endoscopy, 36:7949–7960, 2022.">Hou <em>et al.</em>, 2022</a>]</span>.</span><a class="headerlink" href="#lapar-liver-surgery-fig" title="Link to this image">#</a></p>
+</figcaption>
+</figure>
+<p>From an engineering perspective, this evolution represents an optimization problem: how do we maintain surgical capabiity while minimizing tissue truma? The answer lies in advancing medical imaging systems, precision mechanics and mechatronics, and human-computer interfaces that extend the surgeon’s sensory and motor capabilities.</p>
+</section>
+<section id="surgery-vs-intervention-the-critical-distrinction">
+<h2>Surgery vs. Intervention: The Critical Distrinction<a class="headerlink" href="#surgery-vs-intervention-the-critical-distrinction" title="Link to this heading">#</a></h2>
+<p>In this course, we therefore make the critical distrinction between <strong>surgery</strong> and <strong>intervention</strong>:</p>
+<p><strong>Surgery</strong> = The means of providing surgical *<em>access</em> to anatomical targets (e.g. exposing a tumour hidden beneath organ surfaces), and</p>
+<p><strong>Intervention</strong> = The therapeutic act that directly improves the patient’s condition (e.g. removing the tumour via rection or destroying it via thermal ablation).</p>
+<p>This distinction appears across all surgical specialities:</p>
+<ul class="simple">
+<li><p><strong>Cardiac surgery</strong>: sternotomy (<em>surgery</em>) enables heart valve replacement (<em>intervention</em>)</p></li>
+<li><p><strong>Neurosurgery</strong>: craniotomy (<em>surgery</em>) enables brain tumour resection (<em>intervention</em>)</p></li>
+<li><p><strong>Orthopaedics</strong>: arthroscopy (<em>surgery</em>) enables meniscus repairs (<em>intervention</em>)</p></li>
+</ul>
+</section>
+<section id="implications-for-computer-assisted-surgery">
+<h2>Implications for Computer-Assisted Surgery<a class="headerlink" href="#implications-for-computer-assisted-surgery" title="Link to this heading">#</a></h2>
+<p>This framework has profound implications for how we approa
+In this manner, <strong>surgery is, in fact, a side-effect of therapy!</strong></p>
 </section>
 </section>
 
@@ -453,15 +489,15 @@ document.write(`
       <i class="fa-solid fa-angle-left"></i>
       <div class="prev-next-info">
         <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Background</p>
+        <p class="prev-next-title">Introduction to Computer-Integrated Interventional Medicine</p>
       </div>
     </a>
     <a class="right-next"
-       href="../Conclusion/bibliography.html"
+       href="History.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Bibliography</p>
+        <p class="prev-next-title">History of Image-Guided Interventions</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -481,7 +517,10 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#but-what-is-surgery">But what is Surgery?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#but-what-is-surgery">But What Is Surgery?</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-evolution-of-surgical-access">The Evolution of Surgical Access</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#surgery-vs-intervention-the-critical-distrinction">Surgery vs. Intervention: The Critical Distrinction</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#implications-for-computer-assisted-surgery">Implications for Computer-Assisted Surgery</a></li>
 </ul>
   </nav></div>
 
